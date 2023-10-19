@@ -1,0 +1,36 @@
+<div class="conatiner-fluid">
+  <div class="container">
+    <mat-card class="login">
+      <form
+        class="loginform"
+        (ngSubmit)="onClickLogIn(logInForm)"
+        #logInForm="ngForm"
+      >
+        <mat-form-field appearance="outline">
+          <mat-label>User Name</mat-label>
+          <input
+            matInput
+            placeholder="Enter UserName"
+            name="userName"
+            required
+            ngModel
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            placeholder="Enter Password"
+            type="password"
+            name="Password"
+            required
+            ngModel
+          />
+        </mat-form-field>
+        <div class="loginBtn">
+          <button mat-raised-button color="primary">Log In</button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>
